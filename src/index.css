@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-vetiva-gold: #f97316; /* High density bright action color */
+  --color-vetiva-navy: #141414;
+  --color-vetiva-dark: #141414;
+  --color-vetiva-slate: #F5F5F3;
+}
+
+/* Full System Override for the High Density Swiss Vibe */
+body, button, input, select, textarea, option, span, h1, h2, h3, h4, h5, h6, table, div {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* Base high density contrast background and text */
+body {
+  background-color: #E4E3E0 !important;
+  color: #141414 !important;
+}
+
+#main-system-app {
+  background-color: #E4E3E0 !important;
+  color: #141414 !important;
+}
+
+/* Clear, sharp border styles of 1px solidity */
+.border, .border-b, .border-t, .border-l, .border-r, 
+.border-slate-100, .border-slate-200, .border-slate-800, .border-amber-500\/20 {
+  border-color: #141414 !important;
+  border-width: 1px !important;
+}
+
+/* Zero shadows and completely flat surfaces as per theme specification */
+.shadow, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl {
+  box-shadow: none !important;
+}
+
+/* Force round corner classes to flat/sharp angles */
+.rounded, .rounded-sm, .rounded-md, .rounded-lg, .rounded-xl, .rounded-2xl, .rounded-3xl, .rounded-full:not(.animate-ping) {
+  border-radius: 0px !important;
+}
+
+/* Override background colors of components */
+.bg-white, .bg-slate-50, .bg-slate-100/50, .bg-slate-50/50 {
+  background-color: #ffffff !important;
+}
+
+/* Sidebar and nested background utilities */
+.bg-slate-50, .bg-slate-100/50, .bg-slate-50/50, .bg-[#f8fafc], .bg-[#F5F5F3], .bg-slate-900\/60, #signature-configurator-overlay {
+  background-color: #F5F5F3 !important;
+}
+
+/* Heavy charcoal headers and selected items */
+header, .bg-[#0b1a30] {
+  background-color: #ffffff !important;
+  color: #141414 !important;
+  border-bottom: 1.5px solid #141414 !important;
+}
+
+/* Text selections inside headers */
+header span, header h1, header select, header option {
+  color: #141414 !important;
+}
+
+/* Header switcher container */
+header .bg-slate-900\/60 {
+  background-color: #ffffff !important;
+  border: 1px solid #141414 !important;
+}
+
+header select {
+  background-color: #ffffff !important;
+  border: 1px solid #141414 !important;
+}
+
+/* Tab indicator highlight styling */
+.border-[#c39c4a] {
+  border-bottom-color: #141414 !important;
+  border-bottom-width: 2px !important;
+  color: #141414 !important;
+  font-weight: bold !important;
+}
+
+/* Highlighted pending work item */
+.bg-amber-100\/10, .bg-amber-500\/5 {
+  background-color: #ffffff !important;
+}
+
+.border-amber-500 {
+  border-left-color: #141414 !important;
+  border-left-width: 3px !important;
+}
+
+/* Primary positive process buttons (Approve, Submit) */
+.bg-amber-500, .bg-blue-600, .bg-[#0b1a30]:not(header) {
+  background-color: #141414 !important;
+  color: #ffffff !important;
+  border: 1px solid #141414 !important;
+}
+
+.bg-amber-500:hover, .bg-blue-600:hover, .bg-amber-600:hover {
+  background-color: #333333 !important;
+}
+
+/* Rejected actions red buttons */
+.bg-red-600 {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border: 1px solid #141414 !important;
+}
+
+.bg-red-600:hover {
+  background-color: #b91c1c !important;
+}
+
+/* Form input, textarea focus rings overrides */
+input:focus, select:focus, textarea:focus {
+  border-color: #141414 !important;
+  outline: none !important;
+}
+
+/* Table styling layout tweaks for ultra consistency */
+th {
+  background-color: #F5F5F3 !important;
+  color: #141414 !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid #141414 !important;
+}
+
+/* Scrollbars - high-contrast industrial style */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #E4E3E0;
+}
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Custom print layouts */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+

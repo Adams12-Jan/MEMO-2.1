@@ -1,0 +1,6 @@
+{
+  "name": "Memo & Cash Advance System",
+  "description": "Automated Internal Memo Approval & Cash Advance Retirement System with electronic signatures, sequential workflows, payment processing, cash advance and retirement cycles, and secure audit trails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
